@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms in html</title>
+    <style>
+        label{
+            color:red
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <form action="/day-7-forms/welcom.html">
+        <!-- firstname, lastname, phone number, email -->
+         <label for="firstName">Firstname: </label>
+         <input type="text" id="firstname" placeholder="enter your first name" required>
+           <label for="lastname">Lastname: </label>
+         <input type="text" id="lastname" placeholder="enter your last name">
+
+         <label for="email">Email:</label>
+         <input type="email" id="email">
+
+         <label for="password">Password</label>
+         <input type="password" id="password">
+
+         <label for="male">male</label>
+         <input type="radio" name="gender" id="male">
+         <label for="female">female</label>
+         <input type="radio" name="gender" id="female">
+
+         <label for="">Apple</label>
+         <input type="checkbox">
+         <label for="">orange</label>
+         <input type="checkbox">
+         <label for="">mango</label>
+         <input type="checkbox">
+
+
+         <!-- description -->
+        <textarea name="" id="" placeholder="entery your paragraph" rows="5" cols="50"></textarea>
+        <br>
+ <label for="">country</label>
+        <select name="" id="">
+            <option value="nepal">Nepal</option>
+            <option value="india">India</option>
+            <option value="us">US</option>
+            <option value="china">China</option>
+        </select>
+
+         <br><br>
+
+         <input type="date">
+         <input type="time">
+
+         <input type="range" value="10">
+         <input type="submit" value="Submit">
+    </form>
+</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    your form has submitted. thanks for submit the form!
+</body>
+</html>
