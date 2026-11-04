@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Document</title>
+    <style>
+        /* yedi hami le , ma use garem vani jastai div,p garyo vani sab change hunxa ...... yedi div>p use garem vane  div vhitra ko p vanne bhujinxa */
+
+
+        /* div>p{
+color: red;
+
+        } */
+        /* child selector -> div vhitra vako paragraph lai matra colour payo ....... father ko child lai matra implement hunxa , child ko child lai hunna */
+        div>p {
+            color: red;
+        }
+
+
+        /* descended selector */
+        div h5 p {
+            color: green;
+             }
+
+        div h5 div a {
+            color: rgb(194, 57, 146);
+        }
+
+        div h5 div p {
+            background-color: red;
+        }
+
+        div>p {
+            color: blue;
+        }
+
+        div>h1 {
+            color: green;
+             height: 201px;
+            background-color: red;
+        }
+
+        div>a{
+            color: red;
+           
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Heading 1</h1>
+        
+        <p>
+            <h1>great</h1>
+        </p>
+
+        <h1>
+            <p>hello</p>
+        </h1>
+    </div>
+</body>
+
+</html>

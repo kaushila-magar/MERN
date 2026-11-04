@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* child selectors */
+        div>p{
+            color: red;
+        }
+
+        /* descended selectors */
+        /* div h5 p{
+            color: green;
+        } */
+        /* div h5 div a{
+            color: red;
+        } */
+
+        div h5 div p{
+            color: green;
+        }
+         div h2 p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    h1 or heading tag should not be inside the p tag.
+    -->
+
+    <div>
+        <p>i am a paragraph</p>
+        <p>hello</p>
+        <h1>heading 1</h1>
+        <h5>
+            <p>second paragraph</p>
+
+            <div>
+                <p>hello</p>
+                <a href="">i am link</a>
+            </div>
+        </h5>
+
+    </div>
+ <div>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+
+        <h2>
+            <p>hi</p>
+        </h2>
+    </div>
+    
+</body>
+</html>
