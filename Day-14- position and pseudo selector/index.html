@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: rebeccapurple;
+            cursor: pointer;
+        }
+
+        /* pseudo selector */
+        .box:hover {
+            /* height: 400px; */
+            scale: 1.5;
+            background-color: pink;
+        }
+        .box2 p:first-child{
+            background-color: red;
+
+        }
+        p:last-child{
+            background-color: aqua;
+        }
+        p:nth-child(2){
+            background-color: green;
+        }
+        button{
+            background: red;
+        }
+        button:disabled{
+            background-color: green;
+            
+        }
+        input:checked{
+            background-color:red;
+        }
+/* ~sibling */
+input:checked~h1{
+    background-color: red;
+}
+.before:hover::after{
+    content: "";
+    display:block;
+    width: 50px;
+    height: 5px;
+    background-color:red;
+    
+
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="before">hi</div>
+    <div class="box2">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis voluptatum impedit placeat architecto
+            mollitia nesciunt a modi quam nam. Dolor, tenetur? Adipisci dolorum dignissimos sunt saepe in sequi repellat
+            quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, delectus earum voluptas consectetur
+            voluptates praesentium recusandae libero quibusdam dignissimos ex aperiam atque, nisi voluptatibus tempora
+            cupiditate? Cum recusandae assumenda vitae!
+
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla nisi quod labore cum repellat unde.
+            Repellendus, adipisci ipsum, placeat voluptates in esse harum tempora sunt excepturi, quidem assumenda
+            omnis.
+
+        </p>
+    </div>
+    <div>
+        <button>help me</button>
+        <button disabled>hello</button>
+    </div>
+    <input type="checkbox">
+    <h1 class="p">hello</h1>
+
+</body>
+
+</html>
